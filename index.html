@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!----- CSS ----->
+    <link rel="stylesheet" href="default.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+
+            <!----- TITLE ----->
+            <div class="title">
+                <h1>Grade Calculator</h1>
+            </div>
+
+            <!----- LABELS ----->
+            <div class="labels">
+                <h2>Assignment</h2>
+                <h2>Grade(%)</h2>
+                <h2>Weight</h2>
+            </div>
+
+            <!-- INPUTS -->
+            <div class="inputs" id="wrapper">
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="all-buttons">
+                <!-- ADD NEW ROW-->
+                <button onClick="addNewRow()" class="buttons"><b>ADD ASSIGNMENT</b></button>
+
+
+                <!-- CALC GRADE BUTTON-->
+                <button onClick="calculateGrade()" class="buttons"><b>CALCULATE GRADE</b></button>
+
+
+                <!-- CLEAR BUTTON-->
+                <button onClick="clearAll()" class="buttons"><b>CLEAR ALL</b></button>
+            </div>
+
+            <!--DISPLAYS-->
+            <div class='displays'>
+                <!-- DISPLAY GRADE-->
+                <div class='display-grade'>
+                    <p id="grade"></p>
+                </div>
+
+                <!-- DISPLAY LETTER GRADE-->
+                <div class='display-grade'>
+                    <p id="letter-grade"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----- JAVASCRIPT ----->
+    <script src="./main.js"></script>
+</body>
+
+</html>
